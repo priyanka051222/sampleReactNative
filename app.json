@@ -1,0 +1,12 @@
+{
+  "name": "loved",
+  "displayName": "loved",
+  "expo": {
+    "name": "loved",
+    "slug": "loved",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
