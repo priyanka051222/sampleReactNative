@@ -1,21 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import { ScrollView } from 'react-native';
+import AutoInvestmentsIndicators from './AutoInvestmentsIndicators';
+import AutoInvestmentsCarousel from './AutoInvestmentsCarousel';
+import AutoInvestmentsSettings from './AutoInvestmentsSettings';
 
 export default function App() {
+  const [item, setItem] = useState(null);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={{ marginTop: 20, height:'100%', padding:20, backgroundColor: '#fcba03' }}>
+      <AutoInvestmentsIndicators/>
+      <AutoInvestmentsCarousel onChangeSetting = {(item) => {setItem(item)}}/>
+      {item && <AutoInvestmentsSettings item={item}/>}
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fcba03',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

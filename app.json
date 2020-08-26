@@ -1,12 +1,31 @@
 {
-  "name": "loved",
-  "displayName": "loved",
   "expo": {
-    "name": "loved",
-    "slug": "loved",
+    "name": "carousel-simple-example",
+    "slug": "snack-68bde15e-5d27-4a67-b097-e5876c201962",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "Simple example for react-native-snap-carousel\n\nhttps://github.com/archriss/react-native-snap-carousel"
   }
 }
